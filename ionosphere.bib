@@ -1,17 +1,18 @@
 %Journal abbreviations
-@STRING{ag = "An. Geo."}
+@STRING{aap = "A\&A"}
+@STRING{ag = "Ann. Geophys."}
 @STRING{apj = "ApJ"}
 @STRING{apjs = "ApJS"}
 @STRING{apjl = "ApJL"}
-@STRING{jgr = "JGR"}
-@STRING{jgrsp = "JGR (Space Phys.)"}
+@STRING{jgr = "J. Geophys. Res."}
+@STRING{jgrsp = "J. Geophys. Res. Space Physics"}
 @STRING{mnras = "MNRAS"}
-@STRING{aap = "A\&A"}
-@STRING{grl = "GRL"}
+@STRING{grl = "Geophys. Res. Lett."}
 @STRING{arx = "ArXiv e-prints"}
-@STRING{prl = "PRL"}
-@STRING{jastp = "JASTP"}
-@STRING{jatp = "JATP"}
+@STRING{pop = "Physics of Plasmas"}
+@STRING{prl = "Phys. Rev. Lett."}
+@STRING{jastp = "J. Atmos. Sol. Terr. Phys."}
+@STRING{jatp = "J. Atmos. Terr. Phys."}
 
 %Month abbreviations
 @STRING{jan = "January"}
@@ -52,15 +53,17 @@
   Publisher = {Birkh{\"{a}}user Press},
   Year = {1997}
 }
+
 @other{hypre-web-page,
   key = {hypre},
   title  = {{\sl hypre}: High Performance Preconditioners},
   organization = {Lawrence Livermore National Laboratory},
   note  = {\url{http://www.llnl.gov/CASC/hypre/}}
 }
-@Inbook{Falgout:2002,
+
+@incollection{Falgout_Yang:2002,
    author="Falgout, Robert D. and Yang, Ulrike Meier",
-   editor="Sloot, Peter M. A. and Hoekstra, Alfons G. and Tan, C. J. Kenneth and Dongarra, Jack J.",
+  editor="Sloot, Peter M. A. and Hoekstra, Alfons G. and Tan, C. J. Kenneth and Dongarra, Jack J.",
    title="hypre: A Library of High Performance Preconditioners",
    bookTitle="Computational Science --- ICCS 2002: International Conference Amsterdam, The Netherlands, April 21--24, 2002 Proceedings, Part III",
    year="2002",
@@ -68,10 +71,21 @@
    address="Berlin, Heidelberg",
    pages="632--641",
    isbn="978-3-540-47789-1",
-   doi="10.1007/3-540-47789-6_66",
-   url="http://dx.doi.org/10.1007/3-540-47789-6_66"
+   doi="10.1007/3-540-47789-6/\_66",
+   url="http://dx.doi.org/10.1007/3-540-47789-6\_66"
 }
 
+@techreport{superlu_ug99,
+     AUTHOR = {X.S. Li and J.W. Demmel and J.R. Gilbert and iL. Grigori and M. Shao and
+          I. Yamazaki},
+     INSTITUTION = {Lawrence Berkeley National Laboratory},
+     NUMBER = {LBNL-44289},
+     TITLE = {{SuperLU Users' Guide}},
+     MONTH = {September},
+     YEAR = {1999},
+     NOTE = "\url{http://crd.lbl.gov/~xiaoye/SuperLU/}.
+             Last update: August 2011"
+}
 
 %% Books
 @BOOK{Birdsall_Langdon:1991,
@@ -88,7 +102,7 @@ booktitle = {Plasma Physics via Computer Simulation, The Adam Hilger Series on P
 @ARTICLE{Bahcivan_Hysell:2006,
    author = {{Bahcivan}, H. and {Hysell}, D.~L.},
     title = "{A model of secondary Farley-Buneman waves in the auroral electrojet}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Ionosphere: Plasma waves and instabilities (2772), Ionosphere: Ionospheric irregularities, Magnetospheric Physics: Auroral phenomena (2407), Space Plasma Physics: Electrostatic structures, auroral electrojet irregularities, Farley-Buneman waves, type II radar echoes, secondary waves},
      year = 2006,
     month = jan,
@@ -104,7 +118,7 @@ booktitle = {Plasma Physics via Computer Simulation, The Adam Hilger Series on P
    author = {{Bahcivan}, H. and {Cutler}, J.~W. and {Springmann}, J.~C. and 
 	{Doe}, R. and {Nicolls}, M.~J.},
     title = "{Magnetic aspect sensitivity of high-latitude E region irregularities measured by the RAX-2 CubeSat}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Farley-Buneman waves, auroral electrojet irregularities},
      year = 2014,
     month = feb,
@@ -161,7 +175,7 @@ booktitle = {Plasma Physics via Computer Simulation, The Adam Hilger Series on P
    author = {{Blix}, T.~A. and {Thrane}, E.~V. and {Kirkwood}, S. and {Dimant}, Y.~S. and 
 	{Sudan}, R.~N.},
     title = "{Experimental evidence for unstable waves in the lower E/Upper D-region excited near the bisector between the electric field and the drift velocity}",
-  journal = {grl},
+  journal = grl,
  keywords = {Ionosphere: Plasma temperature and density, Ionosphere: Plasma waves and instabilities},
      year = 1996,
    volume = 23,
@@ -174,7 +188,7 @@ booktitle = {Plasma Physics via Computer Simulation, The Adam Hilger Series on P
 @article {Bowles_etal:1960,
   author = {Bowles, K. L. and Cohen, R. and Ochs, G. R. and Balsley, B. B.},
    title = {Radio echoes from field-aligned ionization above the magnetic equator and their resemblance to auroral echoes},
- journal = {Journal of Geophysical Research},
+ journal = jgr,
   volume = {65},
   number = {6},
     issn = {2156-2202},
@@ -187,7 +201,7 @@ booktitle = {Plasma Physics via Computer Simulation, The Adam Hilger Series on P
 @article {Bowles_etal:1963,
 author = {Bowles, K. L. and Balsley, B. B. and Cohen, Robert},
 title = {Field-aligned E-region irregularities identified with acoustic plasma waves},
-journal = {Journal of Geophysical Research},
+journal = jgr,
 volume = {68},
 number = {9},
 issn = {2156-2202},
@@ -283,7 +297,33 @@ booktitle = {APS Meeting Abstracts},
 	doi = {10.1029/2011JA016649}
 }
 
-@ARTICLE{Dimant_Sudan:1995,
+@ARTICLE{Dimant_Sudan:1995a,
+   author = {{Dimant}, Y.~S. and {Sudan}, R.~N.},
+    title = "{Kinetic theory of low-frequency cross-field instability in a weakly ionized plasma. I}",
+  journal = pop,
+     year = 1995,
+    month = apr,
+   volume = 2,
+    pages = {1157-1168},
+      doi = {10.1063/1.871394},
+   adsurl = {http://adsabs.harvard.edu/abs/1995PhPl....2.1157D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Dimant_Sudan:1995b,
+   author = {{Dimant}, Y.~S. and {Sudan}, R.~N.},
+    title = "{Kinetic theory of low-frequency cross-field instability in a weakly ionized plasma. II}",
+  journal = pop,
+     year = 1995,
+    month = apr,
+   volume = 2,
+    pages = {1169-1181},
+      doi = {10.1063/1.871395},
+   adsurl = {http://adsabs.harvard.edu/abs/1995PhPl....2.1169D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Dimant_Sudan:1995c,
    author = {{Dimant}, Y.~S. and {Sudan}, R.~N.},
     title = "{Kinetic theory of the Farley-Buneman instability in the E region of the ionosphere}",
   journal = jgr,
@@ -311,6 +351,40 @@ booktitle = {APS Meeting Abstracts},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
+@ARTICLE{Drexler_etal:2002,
+   author = {{Drexler}, J. and {St.-Maurice}, J.-P. and {Chen}, D. and {Moorcroft}, D.~R.
+	},
+    title = "{New insights from a nonlocal generalization of the Farley-Buneman instability problem at high latitudes}",
+  journal = ag,
+     year = 2002,
+    month = dec,
+   volume = 20,
+    pages = {2003-2025},
+      doi = {10.5194/angeo-20-2003-2002},
+   adsurl = {http://ads.nao.ac.jp/abs/2002AnGeo..20.2003D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Falgout:2006,
+ author = {Falgout, Robert D.},
+ title = {An Introduction to Algebraic Multigrid},
+ journal = {Computing in Science and Engg.},
+ issue_date = {November 2006},
+ volume = {8},
+ number = {6},
+ month = nov,
+ year = {2006},
+ issn = {1521-9615},
+ pages = {24--33},
+ numpages = {10},
+ url = {http://dx.doi.org/10.1109/MCSE.2006.105},
+ doi = {10.1109/MCSE.2006.105},
+ acmid = {1175964},
+ publisher = {IEEE Educational Activities Department},
+ address = {Piscataway, NJ, USA},
+ keywords = {AMG, linear systems, multigrid principles, multigrid solvers, multigrid solvers, linear systems, AMG, multigrid principles},
+} 
+
 @ARTICLE{Farley:1963,
   author = {{Farley}, Donald~T.},
   title = {A plasma instability resulting in field-aligned irregularities in
@@ -324,7 +398,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Farley:1985,
    author = {{Farley}, D.~T.},
     title = "{Theory of equatorial electrojet plasma waves - New developments and current status}",
-  journal = {Journal of Atmospheric and Terrestrial Physics},
+  journal = jatp,
  keywords = {Equatorial Electrojet, Plasma Waves, Space Plasmas, Atmospheric Turbulence, Computerized Simulation, Magnetohydrodynamic Stability, Nonlinear Systems, Particle Collisions},
      year = 1985,
     month = oct,
@@ -337,7 +411,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Farley:2009,
    author = {{Farley}, D.~T.},
     title = "{The equatorial E-region and its plasma instabilities: a tutorial}",
-  journal = {Annales Geophysicae},
+  journal = ag,
      year = 2009,
     month = apr,
    volume = 27,
@@ -389,7 +463,6 @@ booktitle = {APS Meeting Abstracts},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
-
 @ARTICLE{Fejer_Kelley:1980,
    author = {{Fejer}, B.~G. and {Kelley}, M.~C.},
     title = "{Ionospheric irregularities}",
@@ -437,7 +510,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Fejer:1979,
    author = {{Fejer}, J.~A.},
     title = "{Ionospheric instabilities and fine structure}",
-  journal = {Journal of Atmospheric and Terrestrial Physics},
+  journal = jatp,
  keywords = {Electrojets, F Region, Ionospheric Disturbances, Magnetohydrodynamic Stability, Auroral Electrojets, Doppler Effect, E Region, Equatorial Electrojet, Fine Structure, Power Spectra, Vertical Distribution},
      year = 1979,
     month = aug,
@@ -464,7 +537,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Forbes_Lindzen:1976b,
    author = {{Forbes}, J.~M. and {Lindzen}, R.~S.},
     title = "{Atmospheric solar tides and their electrodynamic effects{\mdash}II. The equatorial electrojet}",
-  journal = {Journal of Atmospheric and Terrestrial Physics},
+  journal = jatp,
      year = 1976,
     month = oct,
    volume = 38,
@@ -519,7 +592,7 @@ booktitle = {APS Meeting Abstracts},
    author = {{Hassan}, E. and {Horton}, W. and {Smolyakov}, A.~I. and {Hatch}, D.~R. and 
 	{Litt}, S.~K.},
     title = "{Multiscale equatorial electrojet turbulence:Baseline 2-D model}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {equatorial ionosphere, equatorial electrojet, Farley-Buneman instability, gradient-drift instability},
      year = 2015,
     month = feb,
@@ -591,7 +664,7 @@ booktitle = {APS Meeting Abstracts},
 	{Scipion}, D.~E. and {Vlasov}, M. and {Cuevas}, R. and {Heinselman}, C.
 	},
     title = "{Combined radar observations of equatorial electrojet irregularities at Jicamarca}",
-  journal = {Annales Geophysicae},
+  journal = ag,
      year = 2007,
     month = mar,
    volume = 25,
@@ -625,7 +698,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Kelley_Ilma:2013,
    author = {{Kelley}, M.~C. and {Ilma}, R.~R.},
     title = "{On the development of nonlinear waves in the equatorial electrojet}",
-  journal = {Journal of Atmospheric and Solar-Terrestrial Physics},
+  journal = jastp,
      year = 2013,
     month = oct,
    volume = 103,
@@ -711,6 +784,43 @@ booktitle = {APS Meeting Abstracts},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
+@ARTICLE{Lehmacher_etal:2015,
+   author = {{Lehmacher}, G.~A. and {Larsen}, M.~F. and {Croskey}, C.~L.},
+    title = "{Observation of electron biteout regions below sporadic E layers at polar latitudes}",
+  journal = {Annales Geophysicae},
+     year = 2015,
+    month = mar,
+   volume = 33,
+    pages = {371-380},
+      doi = {10.5194/angeo-33-371-2015},
+   adsurl = {http://adsabs.harvard.edu/abs/2015AnGeo..33..371L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Li:2005,                                                                  
+    AUTHOR = {Xiaoye S. Li},                                                    
+    TITLE = {An Overview of {SuperLU}: Algorithms, Implementation,              
+             and User Interface},                                               
+    journal = toms,                                                             
+    volume = {31},                                                              
+    number = {3},                                                               
+    month = {September},                                                        
+    year = {2005},                                                              
+    pages = {302-325},                                                          
+}
+
+@article{Li_Demmel:2003,
+     author = {Xiaoye S. Li and James W. Demmel},
+     title = {{SuperLU\_DIST}: A Scalable Distributed-Memory Sparse Direct
+              Solver for Unsymmetric Linear Systems},
+     journal = {ACM Trans. Mathematical Software},
+     month = {June},
+     volume = {29},
+     number = {2},
+     pages = {110-140},
+     year = 2003
+}
+
 @ARTICLE{Litt_etal:2015b,
    author = {{Litt}, S.~K. and {Bains}, A.~S. and {Smolyakov}, A.~I. and 
 	{Onishchenko}, O.~G. and {Pokhotelov}, O.~A.},
@@ -746,7 +856,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Maeda_etal:1963,
   title = {Theoretical Interpretation of the Equatorial Sporadic $E$ Layers},
   author = {Maeda, K. and Tsuda, T. and Maeda, H.},
-  journal = {Phys. Rev. Lett.},
+  journal = prl,
   volume = {11},
   issue = {9},
   pages = {406--407},
@@ -761,7 +871,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Makarevich:2016,
    author = {{Makarevich}, R.~A.},
     title = "{Toward an integrated view of ionospheric plasma instabilities: Altitudinal transitions and strong gradient case}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {electrostatic instabilities, gradient-drift instability, Farley-Buneman instability, current-convective instability},
      year = 2016,
     month = apr,
@@ -856,7 +966,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Oppenheim_Dimant:2004,
 	author = {{Oppenheim}, M.~M. and {Dimant}, Y.~S.},
 	title = "{Ion thermal effects on E-region instabilities: 2D kinetic simulations}",
-	journal = {Journal of Atmospheric and Solar-Terrestrial Physics},
+	journal = jastp,
 	year = 2004,
 	month = nov,
 	volume = 66,
@@ -894,7 +1004,7 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Otani_Oppenheim:2006,
    author = {{Otani}, N.~F. and {Oppenheim}, M.},
     title = "{Saturation of the Farley-Buneman instability via three-mode coupling}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Ionosphere: Plasma waves and instabilities (2772), Ionosphere: Ionospheric irregularities, Ionosphere: Equatorial ionosphere, Mathematical Geophysics: Spectral analysis (3205, 3280), Farley-Buneman instability, electrojet, E region ionosphere, three-wave mode coupling, type I irregularities, collisional two-stream instability},
      year = 2006,
     month = mar,
@@ -924,7 +1034,7 @@ booktitle = {APS Meeting Abstracts},
    author = {{Patra}, A.~K. and {Tiwari}, D. and {Devasia}, C.~V. and {Pant}, T.~K. and 
 	{Sridharan}, R.},
     title = "{East-west asymmetries of the equatorial electrojet 8.3 m type-2 echoes observed over Trivandrum and a possible explanation}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Ionosphere: Equatorial ionosphere, Ionosphere: Ionospheric irregularities, Ionosphere: Plasma waves and instabilities (2772), Ionosphere: Instruments and techniques, equatorial electrojet, plasma irregularities, type II echoes, asymmetry},
      year = 2005,
     month = nov,
@@ -984,7 +1094,7 @@ booktitle = {APS Meeting Abstracts},
    author = {{Picone}, J.~M. and {Hedin}, A.~E. and {Drob}, D.~P. and {Aikin}, A.~C.
 	},
     title = "{NRLMSISE-00 empirical model of the atmosphere: Statistical comparisons and scientific issues}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Atmospheric Composition and Structure: Thermosphere-composition and chemistry, Atmospheric Composition and Structure: Pressure, density, and temperature, Atmospheric Composition and Structure: Ion chemistry of the atmosphere (2419, 2427), Atmospheric Composition and Structure: Instruments and techniques, Atmospheric Composition and Structure: Thermosphere-energy deposition, empirical, atmosphere, model, composition, temperature, drag},
      year = 2002,
     month = dec,
@@ -1012,10 +1122,9 @@ booktitle = {APS Meeting Abstracts},
 }
 
 @ARTICLE{Reddy_etal:1987,
-   author = {{Reddy}, C.~A. and {Viswanathan}, K.~S. and {Vikramkumar}, B.~T.
-	},
+   author = {{Reddy}, C.~A. and {Viswanathan}, K.~S. and {Vikramkumar}, B.~T.},
     title = "{Electric fields and currents in the equatorial electrojet deduced from VHF radar observations. I - A method of estimating electric fields. II - Characteristics of electric fields on quiet and disturbed days}",
-  journal = {Journal of Atmospheric and Terrestrial Physics},
+  journal = jatp,
  keywords = {Electric Fields, Equatorial Electrojet, Ionospheric Currents, Radar Data, Diurnal Variations, Ionospheric Electron Density, Particle Collisions, Phase Velocity, Plasma Waves, Very High Frequencies},
      year = 1987,
     month = feb,
@@ -1097,13 +1206,26 @@ booktitle = {APS Meeting Abstracts},
 @ARTICLE{Rosenberg_Chow:1998,
    author = {{Rosenberg}, M. and {Chow}, V.~W.},
     title = "{Farley-Buneman instability in a dusty plasma}",
-  journal = {planss},
+  journal = planss,
      year = 1998,
     month = jan,
    volume = 46,
     pages = {103-108},
       doi = {10.1016/S0032-0633(97)00104-9},
    adsurl = {http://ads.nao.ac.jp/abs/1998P\%26SS...46..103R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Rosenberg_Shukla:2003,
+   author = {{Rosenberg}, M. and {Shukla}, P.~K.},
+    title = "{Gradient-drift instability in space dusty plasmas}",
+  journal = {\planss},
+     year = 2003,
+    month = jan,
+   volume = 51,
+    pages = {1-7},
+      doi = {10.1016/S0032-0633(02)00149-6},
+   adsurl = {http://adsabs.harvard.edu/abs/2003P\%26SS...51....1R},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
@@ -1194,11 +1316,25 @@ publisher = {Cambridge University Press},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
+@ARTICLE{StMaurice_Hamza:2001,
+   author = {{St.-Maurice}, J.-P. and {Hamza}, A.~M.},
+    title = "{A new nonlinear approach to the theory of $E$ region irregularities}",
+  journal = {jgr},
+ keywords = {Ionosphere: Ionospheric irregularities, Ionosphere: Plasma waves and instabilities},
+     year = 2001,
+    month = feb,
+   volume = 106,
+    pages = {1751-1760},
+      doi = {10.1029/2000JA000246},
+   adsurl = {http://ads.nao.ac.jp/abs/2001JGR...106.1751S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 @ARTICLE{StMaurice_etal:2003,
    author = {{St.-Maurice}, J.-P. and {Choudhary}, R.~K. and {Ecklund}, W.~L. and 
 	{Tsunoda}, R.~T.},
     title = "{Fast type-I waves in the equatorial electrojet: Evidence for nonisothermal ion-acoustic speeds in the lower E region}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Ionosphere: Equatorial ionosphere, Ionosphere: Plasma waves and instabilities, Ionosphere: Ionospheric irregularities, Ionosphere: Electric fields (2712), vertical type-I waves, equatorial electrojet, VHF radar spectra, nonisothermal ion-acoustic speed, E-region irregularities, saturated waves},
      year = 2003,
     month = may,
@@ -1213,7 +1349,7 @@ publisher = {Cambridge University Press},
 @ARTICLE{Shume_etal:2005,
    author = {{Shume}, E.~B. and {Hysell}, D.~L. and {Chau}, J.~L.},
     title = "{Zonal wind velocity profiles in the equatorial electrojet derived from phase velocities of type II radar echoes}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Ionosphere: Equatorial ionosphere, Ionosphere: Ionosphere/atmosphere interactions (0335), Ionosphere: Ionospheric dynamics, Ionosphere: Ionospheric irregularities, Ionosphere: Instruments and techniques, E region zonal winds, equatorial electrojet, ionospheric irregularities},
      year = 2005,
     month = dec,
@@ -1242,7 +1378,7 @@ publisher = {Cambridge University Press},
 @ARTICLE{Singh_Cole:1989,
    author = {{Singh}, A. and {Cole}, K.~D.},
     title = "{Ion-neutral collisions and the equatorial electrojet}",
-  journal = {Journal of Atmospheric and Terrestrial Physics},
+  journal = jatp,
  keywords = {Equatorial Electrojet, Ion Atom Interactions, Scattering Cross Sections, Atmospheric Attenuation, Atmospheric Density, Electrical Resistivity},
      year = 1989,
     month = dec,
@@ -1312,7 +1448,7 @@ publisher = {Cambridge University Press},
    author = {{Viswanathan}, K.~S. and {Vikramkumar}, B.~T. and {Reddy}, C.~A.
 	},
     title = "{Electric fields and currents in the equatorial electrojet deduced from VHF radar observations{\mdash}II. Characteristics of electric fields on quiet and disturbed days}",
-  journal = {Journal of Atmospheric and Terrestrial Physics},
+  journal = jatp,
      year = 1987,
     month = feb,
    volume = 49,
@@ -1365,7 +1501,7 @@ publisher = {Cambridge University Press},
 @ARTICLE{Woodman_Chau:2002,
    author = {{Woodman}, R.~F. and {Chau}, J.~L.},
     title = "{First Jicamarca radar observations of two-stream E region irregularities under daytime counter equatorial electrojet conditions}",
-  journal = {Journal of Geophysical Research (Space Physics)},
+  journal = jgrsp,
  keywords = {Ionosphere: Ionospheric irregularities, Ionosphere: Equatorial ionosphere, Ionosphere: Plasma waves and instabilities, Ionosphere: Ionospheric dynamics, electrojet, irregularities, equatorial, Jicamarca},
      year = 2002,
     month = dec,
@@ -1374,5 +1510,19 @@ publisher = {Cambridge University Press},
     pages = {1482},
       doi = {10.1029/2002JA009362},
    adsurl = {http://ads.nao.ac.jp/abs/2002JGRA..107.1482W},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Young_etal:2017,
+   author = {{Young}, M.~A. and {Oppenheim}, M.~M. and {Dimant}, Y.~S.},
+    title = "{Hybrid simulations of coupled Farley-Buneman/gradient drift instabilities in the equatorial $E$ region ionosphere}",
+  journal = {Journal of Geophysical Research (Space Physics)},
+ keywords = {ionosphere, E region, Farley-Buneman, gradient drift, plasma irregularities, numerical simulation},
+     year = 2017,
+    month = may,
+   volume = 122,
+    pages = {5768-5781},
+      doi = {10.1002/2017JA024161},
+   adsurl = {http://adsabs.harvard.edu/abs/2017JGRA..122.5768Y},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
